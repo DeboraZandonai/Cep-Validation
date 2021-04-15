@@ -10,6 +10,10 @@ Validação de CEP com api.
   📌 Para rodar o projeto
 </h2>
 
+### Acesse o link
+
+[CEP Validation](https://cep-validation.herokuapp.com)
+
 ### Clone o repositório em sua máquina
 
 ```bash

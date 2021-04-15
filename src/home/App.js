@@ -26,6 +26,7 @@ export default function Cep() {
     <div id="container-body">
       <h1 class="title">Cep Validation</h1>
       <div className="container">
+        <span style={{ color: "#fff" }}>{error}</span>
         <form onSubmit={() => {}} method="post">
           <div className="row">
             <div className="inputbox">
@@ -40,13 +41,12 @@ export default function Cep() {
 
           <div className="row">
             <div className="inputbox">
-              <span style={{ color: "#fff" }}>{error}</span>
               <input
                 type="text"
                 id="cep"
                 onChange={() => {
                   const value = document.getElementById("cep").value;
-                  if (value?.length !== 8) {
+                  if (value?.length >= 8) {
                     handleChangeCep(value);
                   }
                 }}
